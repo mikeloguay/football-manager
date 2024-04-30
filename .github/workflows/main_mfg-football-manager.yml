@@ -13,7 +13,6 @@ jobs:
   
   build_push_to_acr:
     name: 'Docker Build and Push to ACR'
-    needs: build
     runs-on: ubuntu-latest
     environment: production
   
