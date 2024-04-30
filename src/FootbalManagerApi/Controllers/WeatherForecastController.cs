@@ -21,7 +21,7 @@ namespace FootbalManagerApi.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
-            _logger.LogInformation("MFG GET called!");
+            _logger.LogInformation("New version deployed from ACR");
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
